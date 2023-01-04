@@ -1,7 +1,7 @@
 import json
 from collections import OrderedDict
 
-from graphql import format_error, graphql
+from graphql import graphql
 
 from .constants import (
     GQL_CONNECTION_ERROR,
