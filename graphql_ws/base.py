@@ -150,7 +150,7 @@ class BaseSubscriptionServer(object):
             result["data"] = execution_result.data
         if execution_result.errors:
             result["errors"] = [
-                format_error(error) for error in execution_result.errors
+                error.formatted for error in execution_result.errors
             ]
         return result
 
